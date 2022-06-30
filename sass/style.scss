@@ -2,3 +2,42 @@
 
 $font-first: 'Roboto', sans-serif;
 $font-second: 'Roboto Mono', monospace;
+$font-logo: 'Parisienne', cursive;
+
+/* Global */
+
+*, *::before, *::after  {
+    box-sizing: border-box;
+}
+
+/* Logo */
+
+.logo {
+    font-family: $font-logo;
+    font-size: 27px;
+    font-weight: 700;
+    color: gold;
+}
+
+/* Navigation bar */
+
+.navbar-nav .navbar-list {
+    font-family: $font-first;
+    font-size: 25px;
+    list-style-type: none;
+    li {
+        color: wheat;
+        display: inline-block;
+        padding: 0 10px;
+    }
+}
+
+/* Splash */
+
+.navbar {
+    background-image: url('/images/nav-background.jpeg');
+    min-height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

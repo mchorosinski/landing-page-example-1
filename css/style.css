@@ -1,3 +1,36 @@
 /* Variables */
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFBIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
+/* Logo */
+.logo {
+  font-family: "Parisienne", cursive;
+  font-size: 27px;
+  font-weight: 700;
+  color: gold;
+}
+
+/* Navigation bar */
+.navbar-nav .navbar-list {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  list-style-type: none;
+}
+.navbar-nav .navbar-list li {
+  color: wheat;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+/* Splash */
+.navbar {
+  background-image: url("/images/nav-background.jpeg");
+  min-height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFBO0FBTUEsV0FBQTtBQUVBO0VBQ0ksc0JBQUE7QUNMSjs7QURRQSxTQUFBO0FBRUE7RUFDSSxrQ0FYUTtFQVlSLGVBQUE7RUFDQSxnQkFBQTtFQUNBLFdBQUE7QUNOSjs7QURTQSxtQkFBQTtBQUVBO0VBQ0ksaUNBdEJTO0VBdUJULGVBQUE7RUFDQSxxQkFBQTtBQ1BKO0FEUUk7RUFDSSxZQUFBO0VBQ0EscUJBQUE7RUFDQSxlQUFBO0FDTlI7O0FEVUEsV0FBQTtBQUVBO0VBQ0ksb0RBQUE7RUFDQSxpQkFBQTtFQUNBLDJCQUFBO0VBQ0EsNEJBQUE7RUFDQSxzQkFBQTtBQ1JKIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
