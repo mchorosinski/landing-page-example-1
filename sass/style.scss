@@ -1,43 +1,113 @@
 /* Variables */
 
+$color-light: white;
+$color-dark: black;
+$color-first: whitesmoke;
+$color-second: orange;
+$color-super: gold;
 $font-first: 'Roboto', sans-serif;
 $font-second: 'Roboto Mono', monospace;
 $font-logo: 'Parisienne', cursive;
+$transition-first: all 1s;
+$transition-second: all 0.1ms;
 
 /* Global */
 
+body {
+    background: $color-dark;
+}
+
 *, *::before, *::after  {
     box-sizing: border-box;
+}
+
+.btn  {
+    display: inline-block;
+    min-width: 180px;
+    margin: 24px auto 1 auto;
+    padding: 16px;
+    border-radius: 5px;
+    font-family: $font-first;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-width: 2px;
+    border-style: solid;
+    background-position: 100% 0;
+    background-size: 300%;
+    transition: $transition-first;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
 }
 
 /* Logo */
 
 .logo {
     font-family: $font-logo;
-    font-size: 27px;
+    font-size: 30px;
     font-weight: 700;
-    color: gold;
-}
-
-/* Navigation bar */
-
-.navbar-nav .navbar-list {
-    font-family: $font-first;
-    font-size: 25px;
-    list-style-type: none;
-    li {
-        color: wheat;
-        display: inline-block;
-        padding: 0 10px;
+    a {
+        text-decoration: none;
+        color: $color-super;
     }
 }
 
-/* Splash */
+/* Navigation bar & title */
 
 .navbar {
-    background-image: url('/images/nav-background.jpeg');
+    background-image: url('/images/background.webp');
     min-height: 700px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.navbar-nav .navbar-list {
+    font-family: $font-first;
+    font-size: 20px;
+    list-style-type: none;
+    text-align: end;
+    li {
+        display: inline-block;
+        padding: 20px 18px;
+        a {
+            text-decoration: none;
+            color: $color-first;
+        }
+    }
+}
+
+.page-title {
+    margin-top: 120px;
+    font-size: 50px;
+    font-family: $font-second;
+    font-weight: 400;
+    color: $color-light;
+    text-align: center;
+    position: relative;
+    right: 0;
+}
+
+.page-subtitle {
+    font-size: 60px;
+    font-family: $font-second;
+    font-weight: 700;
+    color: $color-light;
+    text-align: center;
+    position: relative;
+    right: 0;
+}
+
+.btn-one {
+    border-color: $color-light;
+    color: $color-light;
+    background-image: linear-gradient(90deg, $color-second 50%, transparent 50%);
+    &:hover {
+        background-position: 0 100%;
+        color: $color-light;
+        border: none;
+        transition: $transition-second;
+    }
 }

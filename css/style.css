@@ -1,36 +1,100 @@
 /* Variables */
 /* Global */
+body {
+  background: black;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 180px;
+  margin: 24px auto 1 auto;
+  padding: 16px;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
+  background-position: 100% 0;
+  background-size: 300%;
+  transition: all 1s;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
 }
 
 /* Logo */
 .logo {
   font-family: "Parisienne", cursive;
-  font-size: 27px;
+  font-size: 30px;
   font-weight: 700;
+}
+.logo a {
+  text-decoration: none;
   color: gold;
 }
 
-/* Navigation bar */
-.navbar-nav .navbar-list {
-  font-family: "Roboto", sans-serif;
-  font-size: 25px;
-  list-style-type: none;
-}
-.navbar-nav .navbar-list li {
-  color: wheat;
-  display: inline-block;
-  padding: 0 10px;
-}
-
-/* Splash */
+/* Navigation bar & title */
 .navbar {
-  background-image: url("/images/nav-background.jpeg");
+  background-image: url("/images/background.webp");
   min-height: 700px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFBO0FBTUEsV0FBQTtBQUVBO0VBQ0ksc0JBQUE7QUNMSjs7QURRQSxTQUFBO0FBRUE7RUFDSSxrQ0FYUTtFQVlSLGVBQUE7RUFDQSxnQkFBQTtFQUNBLFdBQUE7QUNOSjs7QURTQSxtQkFBQTtBQUVBO0VBQ0ksaUNBdEJTO0VBdUJULGVBQUE7RUFDQSxxQkFBQTtBQ1BKO0FEUUk7RUFDSSxZQUFBO0VBQ0EscUJBQUE7RUFDQSxlQUFBO0FDTlI7O0FEVUEsV0FBQTtBQUVBO0VBQ0ksb0RBQUE7RUFDQSxpQkFBQTtFQUNBLDJCQUFBO0VBQ0EsNEJBQUE7RUFDQSxzQkFBQTtBQ1JKIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
+.navbar-nav .navbar-list {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  list-style-type: none;
+  text-align: end;
+}
+.navbar-nav .navbar-list li {
+  display: inline-block;
+  padding: 20px 18px;
+}
+.navbar-nav .navbar-list li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.page-title {
+  margin-top: 120px;
+  font-size: 50px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  position: relative;
+  right: 0;
+}
+
+.page-subtitle {
+  font-size: 60px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  position: relative;
+  right: 0;
+}
+
+.btn-one {
+  border-color: white;
+  color: white;
+  background-image: linear-gradient(90deg, orange 50%, transparent 50%);
+}
+.btn-one:hover {
+  background-position: 0 100%;
+  color: white;
+  border: none;
+  transition: all 0.1ms;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFBO0FBYUEsV0FBQTtBQUVBO0VBQ0ksaUJBYlM7QUNDYjs7QURlQTtFQUNJLHNCQUFBO0FDWko7O0FEZUE7RUFDSSxxQkFBQTtFQUNBLGdCQUFBO0VBQ0Esd0JBQUE7RUFDQSxhQUFBO0VBQ0Esa0JBQUE7RUFDQSxpQ0F0QlM7RUF1QlQsZUFBQTtFQUNBLGtCQUFBO0VBQ0EscUJBQUE7RUFDQSxlQUFBO0VBQ0EsaUJBQUE7RUFDQSxtQkFBQTtFQUNBLDJCQUFBO0VBQ0EscUJBQUE7RUFDQSxrQkE1QmU7RUE2QmYsU0FBQTtFQUNBLDJCQUFBO0VBQ0Esa0JBQUE7QUNaSjs7QURlQSxTQUFBO0FBRUE7RUFDSSxrQ0F0Q1E7RUF1Q1IsZUFBQTtFQUNBLGdCQUFBO0FDYko7QURjSTtFQUNJLHFCQUFBO0VBQ0EsV0E5Q007QUNrQ2Q7O0FEZ0JBLDJCQUFBO0FBRUE7RUFDSSxnREFBQTtFQUNBLGlCQUFBO0VBQ0EsMkJBQUE7RUFDQSw0QkFBQTtFQUNBLHNCQUFBO0FDZEo7O0FEaUJBO0VBQ0ksaUNBNURTO0VBNkRULGVBQUE7RUFDQSxxQkFBQTtFQUNBLGVBQUE7QUNkSjtBRGVJO0VBQ0kscUJBQUE7RUFDQSxrQkFBQTtBQ2JSO0FEY1E7RUFDSSxxQkFBQTtFQUNBLGlCQXhFRTtBQzREZDs7QURpQkE7RUFDSSxpQkFBQTtFQUNBLGVBQUE7RUFDQSxxQ0E1RVU7RUE2RVYsZ0JBQUE7RUFDQSxZQXBGVTtFQXFGVixrQkFBQTtFQUNBLGtCQUFBO0VBQ0EsUUFBQTtBQ2RKOztBRGlCQTtFQUNJLGVBQUE7RUFDQSxxQ0F0RlU7RUF1RlYsZ0JBQUE7RUFDQSxZQTlGVTtFQStGVixrQkFBQTtFQUNBLGtCQUFBO0VBQ0EsUUFBQTtBQ2RKOztBRGlCQTtFQUNJLG1CQXJHVTtFQXNHVixZQXRHVTtFQXVHVixxRUFBQTtBQ2RKO0FEZUk7RUFDSSwyQkFBQTtFQUNBLFlBMUdNO0VBMkdOLFlBQUE7RUFDQSxxQkFuR1k7QUNzRnBCIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
