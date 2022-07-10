@@ -54,7 +54,7 @@ body {
     }
 }
 
-/* Navigation bar & title */
+/* Navigation bar & welcome */
 
 .navbar {
     background-image: url('/images/background.webp');
@@ -109,5 +109,24 @@ body {
         color: $color-light;
         border: none;
         transition: $transition-second;
+    }
+}
+
+/* Services */
+
+.services {
+    background: $color-light;
+    .title-details {
+        h3 {
+            background: blue;
+            text-align: center;
+            font-family: $font-first;
+            font-size: 40px;
+        }
+        p {
+            text-align: center;
+            font-family: $font-second;
+            font-size: 20px;
+        }
     }
 }
