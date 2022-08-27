@@ -4,6 +4,7 @@ $color-light: white;
 $color-dark: black;
 $color-first: whitesmoke;
 $color-second: orange;
+$color-third: grey;
 $color-super: gold;
 $font-first: 'Roboto', sans-serif;
 $font-second: 'Roboto Mono', monospace;
@@ -118,15 +119,20 @@ body {
     background: $color-light;
     .title-details {
         h3 {
-            background: blue;
             text-align: center;
+            margin-top: 100px;
+            margin-bottom: 1px;
             font-family: $font-first;
             font-size: 40px;
+            position: relative;
         }
         p {
             text-align: center;
+            color: $color-third;
+            margin-top: 0px;
             font-family: $font-second;
-            font-size: 20px;
+            font-size: 15px;
+            font-style: oblique;
         }
     }
 }
