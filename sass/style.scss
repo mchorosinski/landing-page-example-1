@@ -14,10 +14,6 @@ $transition-second: all 0.1ms;
 
 /* Global */
 
-body {
-    background: $color-dark;
-}
-
 *, *::before, *::after  {
     box-sizing: border-box;
 }
@@ -134,5 +130,30 @@ body {
             font-size: 15px;
             font-style: oblique;
         }
+    }
+}
+
+.services-details {
+  margin-top: 55px;
+  text-align: center;
+    h3 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      font-family: $font-second;
+      color: $color-third;
+      padding-top: 10px;
+    }
+    i {
+      text-align: center;
+      color: #FFE07E;
+      font-size: 2.6rem;
+      padding-bottom: 25px;
+      width: 90px;
+	    height: 90px;
+      line-height: 85px;
+	    border: 3px solid #FFE07E;
+	    border-radius: 100%;
     }
 }
