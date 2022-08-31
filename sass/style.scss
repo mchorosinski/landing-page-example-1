@@ -3,8 +3,9 @@
 $color-light: white;
 $color-dark: black;
 $color-first: whitesmoke;
-$color-second: orange;
+$color-second: #FFE07E;
 $color-third: grey;
+$color-fourth: #F7F7F7;
 $color-super: gold;
 $font-first: 'Roboto', sans-serif;
 $font-second: 'Roboto Mono', monospace;
@@ -38,6 +39,11 @@ $transition-second: all 0.1ms;
     transform: translateX(-50%);
     position: absolute;
 }
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; }
 
 /* Logo */
 
@@ -117,7 +123,7 @@ $transition-second: all 0.1ms;
         h3 {
             text-align: center;
             margin-top: 100px;
-            margin-bottom: 1px;
+            margin-bottom: 0px;
             font-family: $font-first;
             font-size: 40px;
             position: relative;
@@ -134,7 +140,8 @@ $transition-second: all 0.1ms;
 }
 
 .services-details {
-  margin-top: 55px;
+  padding-top: 55px;
+  padding-bottom: 110px;
   text-align: center;
     h3 {
       text-align: center;
@@ -142,18 +149,71 @@ $transition-second: all 0.1ms;
     p {
       text-align: center;
       font-family: $font-second;
+      font-size: 13px;
       color: $color-third;
       padding-top: 10px;
     }
     i {
       text-align: center;
-      color: #FFE07E;
+      color: $color-second;
       font-size: 2.6rem;
       padding-bottom: 25px;
       width: 90px;
 	    height: 90px;
       line-height: 85px;
-	    border: 3px solid #FFE07E;
+	    border: 3px solid $color-second;
 	    border-radius: 100%;
+    }
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+    background: $color-fourth;
+    .title-details {
+        h3 {
+            text-align: center;
+            margin-top: 100px;
+            margin-bottom: 0px;
+            font-family: $font-first;
+            font-size: 40px;
+            position: relative;
+        }
+        p {
+            text-align: center;
+            color: $color-third;
+            margin-top: 0px;
+            font-family: $font-second;
+            font-size: 15px;
+            font-style: oblique;
+        }
+    }
+}
+
+.portfolio-details {
+  background: $color-fourth;
+  padding-top: 55px;
+  text-align: center;
+    h3 {
+      text-align: center;
+      margin-bottom: 0px;
+    }
+    p {
+      text-align: center;
+      margin-top: 0px;
+      font-family: $font-second;
+      font-size: 13px;
+      font-style: oblique;
+      color: $color-third;
+    }
+    .card-image img {
+      margin-bottom: -4px;
+    }
+    .card-body {
+      background-color: $color-light;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-top: 0px;
+      margin-bottom: 50px;
     }
 }
