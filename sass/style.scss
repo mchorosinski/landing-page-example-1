@@ -43,7 +43,8 @@ $transition-second: all 0.1ms;
 .card img {
   width: 100%;
   height: 300px;
-  object-fit: cover; }
+  object-fit: cover;
+}
 
 /* Logo */
 
@@ -118,7 +119,7 @@ $transition-second: all 0.1ms;
 /* Services */
 
 .services {
-    background: $color-light;
+    background-color: $color-light;
     .title-details {
         h3 {
             text-align: center;
@@ -169,7 +170,7 @@ $transition-second: all 0.1ms;
 /* PORTFOLIO */
 
 .portfolio {
-    background: $color-fourth;
+    background-color: $color-fourth;
     .title-details {
         h3 {
             text-align: center;
@@ -191,7 +192,7 @@ $transition-second: all 0.1ms;
 }
 
 .portfolio-details {
-  background: $color-fourth;
+  background-color: $color-fourth;
   padding-top: 55px;
   text-align: center;
     h3 {
@@ -216,4 +217,57 @@ $transition-second: all 0.1ms;
       margin-top: 0px;
       margin-bottom: 50px;
     }
+}
+
+/* Footer */
+
+footer {
+  background-color: $color-light;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  h4 {
+    font-size: 15px;
+    color: $color-third;
+    text-align: center;
+  }
+  li {
+    font-size: 0;
+    display: inline-block;
+    i {
+      text-align: center;
+      font-size: 16px;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+    .fa-twitter {
+      color: $color-light;
+      background-color: $color-dark;
+      height: 35px;
+      width: 35px;
+      line-height: 35px;
+    }
+    .fa-facebook-f {
+      color: $color-light;
+      background-color: $color-dark;
+      height: 35px;
+      width: 35px;
+      line-height: 35px;
+    }
+    .fa-pinterest-p {
+      color: $color-light;
+      background-color: $color-dark;
+      height: 35px;
+      width: 35px;
+      line-height: 35px;
+    }
+    .fa-google-plus-g {
+      color: $color-light;
+      background-color: $color-dark;
+      height: 35px;
+      width: 35px;
+      line-height: 35px;
+    }
+  }
 }
